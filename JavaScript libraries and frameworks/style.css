@@ -1,0 +1,36 @@
+.footer {
+
+	width: 100%;
+	height: 100px;
+}
+
+small {
+
+	font-size: 15px;
+    position: relative;
+    left: 600px;
+}
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.highlight {
+
+	border: lightgreen 3px solid;
+}
+
+#up-arrow {
+    font-size: 30px;
+    height: 50px;
+	width: 50px;
+	color: #fff;
+	background: lightgreen;
+	border: none;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	cursor: pointer;
+	outline: none;
+}
