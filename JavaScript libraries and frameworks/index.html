@@ -1,352 +1,784 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://kit.fontawesome.com/8d29e20d75.js"></script>
     <title>JavaScript libraries and frameworks</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light pl-5 bg-dark">
-      <a class="navbar-brand text-white" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
-          <div class="dropdown show">
-            <a class="btn dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Frameworks
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#Angular">Angular</a>
-              <a class="dropdown-item" href="#React">React</a>
-              <a class="dropdown-item" href="#Vue">Vue</a>
-              <a class="dropdown-item" href="#Ember">Ember</a>
-              <a class="dropdown-item" href="#Node">Node</a>
-              <a class="dropdown-item" href="#Backbone">Backbone</a>
-              <a class="dropdown-item" href="#Polymer">Polymer</a>
-              <a class="dropdown-item" href="#Meteor">Meteor</a>
-              <a class="dropdown-item" href="#Aurelia">Aurelia</a>
-              <a class="dropdown-item" href="#Mithril">Mithril</a>
-              <a class="dropdown-item" href="#Knockout">Knockout</a>
-              <a class="dropdown-item" href="#Bootstrap">Bootstrap</a>
-            </div>
-          </div>
-          <div class="dropdown show">
-            <a class="btn dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Libraries
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#jquery">jQuery</a>
-              <a class="dropdown-item" href="#iojs">IOjs</a>
-              <a class="dropdown-item" href="#intercooler">Intercoolerjs</a>
-              <a class="dropdown-item" href="#matter">Matterjs</a>
-              <a class="dropdown-item" href="#immutable">Immutablejs</a>
-              <a class="dropdown-item" href="#formatjs">Formatjs</a>
-              <a class="dropdown-item" href="#anima">Animajs</a>
-              <a class="dropdown-item" href="#isjs">Isjs</a>
-              <a class="dropdown-item" href="#minblockjs">MinBlockjs</a>
-              <a class="dropdown-item" href="#blinktitlejs">blinkTitlejs</a>
-              <a class="dropdown-item" href="#createjs">Createjs</a>
-              <a class="dropdown-item" href="#keystonejs">Keystonejs</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <div class="jumbotron">
-      <h1 class="display-3">What is JavaScript?</h1>
-      <p class="lead">JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. Read more about JavaScript.</p>
-      <hr class="my-4">
-      <p>To learn More about JavaScript click the link below</p>
-      <a class="btn btn-success btn-lg" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" role="button" target="_blank">Learn more</a>
-    </div>
-    <div class="container pt-4">
-      <h3>What is a Framework?</h3>
-      <p class="lead pt-3">A framework, or software framework, is a platform for developing software applications. It provides a foundation on which software developers can build programs for a specific platform. For example, a framework may include predefined classes and functions that can be used to process input, manage hardware devices, and interact with system software. This streamlines the development process since programmers don't need to reinvent the wheel each time they develop a new application.</p>
-      <p class="lead pt-3">A framework is similar to an application programming interface (API), though technically a framework includes an API. As the name suggests, a framework serves as a foundation for programming, while an API provides access to the elements supported by the framework. A framework may also include code libraries, a compiler, and other programs used in the software development process.</p>
-      <p class="lead pt-3">Here are a few popular and useful JavaScript Frameworks</p>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-3" >
-            <div class="card mb-3 h-100" id="Angular">
-              <img src="images/angular.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Angular</h5>
-                <p class="card-text">Since its release back in 2010, Angular has always been developers’ favorite due to its flexibility, extensibility, and efficiency. Often referred to as an MVW (model-view-whatever) framework, Angular is a powerful and full-featured JavaScript framework developed by Google with the clear aim of simplifying the development of single-page applications.</p>
-                <a href="https://angular.io/" target="_blank" class="btn btn-primary">Visit Website</a>
+    <div class="body">
+      <nav class="navbar navbar-expand-lg navbar-light pl-5 bg-dark">
+        <a
+          class="navbar-brand text-white"
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          target="_blank"
+          >JavaScript</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active text-white" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+            <div class="dropdown show">
+              <a
+                class="btn dropdown-toggle text-white"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Frameworks
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#Angular">Angular</a>
+                <a class="dropdown-item" href="#React">React</a>
+                <a class="dropdown-item" href="#Vue">Vue</a>
+                <a class="dropdown-item" href="#Ember">Ember</a>
+                <a class="dropdown-item" href="#Node">Node</a>
+                <a class="dropdown-item" href="#Backbone">Backbone</a>
+                <a class="dropdown-item" href="#Polymer">Polymer</a>
+                <a class="dropdown-item" href="#Meteor">Meteor</a>
+                <a class="dropdown-item" href="#Aurelia">Aurelia</a>
+                <a class="dropdown-item" href="#Mithril">Mithril</a>
+                <a class="dropdown-item" href="#Knockout">Knockout</a>
+                <a class="dropdown-item" href="#Bootstrap">Bootstrap</a>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="React">
-              <img src="images/react.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">React</h5>
-                <p class="card-text">Built and maintained by Facebook, React is developers’ most preferred JavaScript framework for front-end development due to its ability to build high-performance, dynamic user interfaces. When used with React Native, it allows developers to build cross-platform mobile apps that are nearly identical to native Android and iOS apps.</p>
-                <a href="https://reactjs.org/" target="_blank" class="btn btn-primary">Visit Website</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="Vue">
-              <img src="images/vue.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Vue</h5>
-                <p class="card-text">Often referred to as a rising star in the world of web development, Vue is a lightweight and progressive JavaScript framework that takes only the best from Angular, React, and Ember, and put them together into a very small package. Having a much higher growth rate than both React and Angular, it can be a great choice for building high-end single page applications (SPAs).</p>
-                <a href="https://vuejs.org/" target="_blank" class="btn btn-primary">Visit Website</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="Ember">
-              <img src="images/ember.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Ember</h5>
-                <p class="card-text">If you’ve ever used the Apple Music, then you’ve already used a mobile app built with Ember. Billed as a JavaScript framework for ambitious web developers, Ember is built with developer ergonomics in mind for providing higher productivity. Among the top users of this JavaScript framework are Netflix, Microsoft, Heroku, LinkedIn, TED and many others. Below is the architecture of Ember:</p>
-                <a href="https://emberjs.com/" target="_blank" class="btn btn-primary">Visit Website</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="Node">
-              <img src="images/nodejs.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Node</h5>
-                <p class="card-text">Built on Chrome’s V8 JavaScript Engine, Node a JavaScript runtime environment designed to let developers easily build high-performance, scalable network applications. Taking advantage of asynchronous event-driven, unblocking I/O model, Node executes JavaScript code on a web server, instead of running it on the client-side inside a browser.</p>
-                <a href="https://nodejs.org/en/" target="_blank" class="btn btn-primary">Visit Website</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="Backbone">
-              <img src="images/backbone.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Backbone</h5>
-                <p class="card-text">Known for being extremely lightweight and fast, Backbone is a widely used JavaScript framework based on the MVP (model–view–presenter) architectural pattern. With an excellent support for RESTful APIs, this flexible JavaScript framework is a perfect choice for developing well-structured, client-side single-page web applications that run inside web browsers.</p>
-                <a href="https://backbonejs.org/" target="_blank" class="btn btn-primary">Visit Website</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="Polymer">
-              <img src="images/polymer.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Polymer</h5>
-                <p class="card-text">The Polymer is another powerful JavaScript framework backed by Google to help developers quickly build high-performant and maintainable web applications using custom reusable HTML elements aka Web Components. Based on Google’s Material Design principle, Polymer strongly emphasizes standards compliance and is used by several Google-powered services, including the redesigned YouTube and Allo for web.</p>
-                <a href="https://www.polymer-project.org/" target="_blank" class="btn btn-primary">Visit Website</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="Meteor">
-              <img src="images/Meteor.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Meteor</h5>
-                <p class="card-text">
-                Unlike other most popular JavaScript frameworks in this list, Meteor can be used to develop both front-end as well as back-end components of a JavaScript-based web, mobile, and desktop application. Perfect for those who want to build real-time web apps, this full-stack reactive application framework is a perfect mix of Angular, React, Cordova, Blaze, and MongoDB. This is how Meteor works</p>
-                <a href="https://www.meteor.com/" target="_blank" class="btn btn-primary">Visit Website</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="Aurelia">
-              <img src="images/Aurelia.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Aurelia</h5>
-                <p class="card-text">Advertised as “the next generation UI framework”, Aurelia focuses on business logic, rather than the framework itself. It is basically a collection of several small JS modules written in ECMAScript, which you can pick and use to develop next-generation JavaScript applications. Surprisingly, Aurelia is the only JavaScript framework that allows developers to create components using the plain JavaScript or Vanilla TypeScript.</p>
-                <a href="https://aurelia.io/" target="_blank" class="btn btn-primary">Visit Website</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="Mithril">
-              <img src="images/Mithril.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Mithril</h5>
-                <p class="card-text">Mithril is a lesser-known yet widely used modern client-side JavaScript framework with a very small footprint of less than 8kb gzipped. Inspired by React.js to a great extent, this small-size JavaScript framework is mainly used for developing Single Page Applications. Owing to its smaller download size and better performance than Vue, React, and Angular, Mithril is used by popular websites like Vimeo, Nike, and Lichess.</p>
-                <a href="https://mithril.js.org/" target="_blank" class="btn btn-primary">Visit Website</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="Knockout">
-              <img src="images/knockoutjs.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Knockout</h5>
-                <p class="card-text">Knockout is a lightweight and small open-source JavaScript framework built to simplify the development of dynamic JavaScript UIs with the MVVM (model–view–view-model) pattern. Being written in pure JavaScript, this open-source framework supports all mainstream browsers, has no dependencies, and can be easily integrated with any other existing web frameworks.</p>
-                <a href="https://knockoutjs.com/" target="_blank" class="btn btn-primary">Visit Website</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card h-100" id="Bootstrap">
-              <img src="images/bootstrap.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Bootstrap</h5>
-                <p class="card-text">Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.
-                Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
-                <a href="https://getbootstrap.com/" target="_blank" class="btn btn-primary">Visit Website</a>
+            <div class="dropdown show">
+              <a
+                class="btn dropdown-toggle text-white"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Libraries
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#jquery">jQuery</a>
+                <a class="dropdown-item" href="#iojs">IOjs</a>
+                <a class="dropdown-item" href="#intercooler">Intercoolerjs</a>
+                <a class="dropdown-item" href="#matter">Matterjs</a>
+                <a class="dropdown-item" href="#immutable">Immutablejs</a>
+                <a class="dropdown-item" href="#formatjs">Formatjs</a>
+                <a class="dropdown-item" href="#anima">Animajs</a>
+                <a class="dropdown-item" href="#isjs">Isjs</a>
+                <a class="dropdown-item" href="#minblockjs">MinBlockjs</a>
+                <a class="dropdown-item" href="#blinktitlejs">blinkTitlejs</a>
+                <a class="dropdown-item" href="#createjs">Createjs</a>
+                <a class="dropdown-item" href="#keystonejs">Keystonejs</a>
               </div>
             </div>
           </div>
         </div>
+      </nav>
+      <div class="jumbotron">
+        <h1 class="display-3">What is JavaScript?</h1>
+        <p class="lead">
+          JavaScript (JS) is a lightweight, interpreted, or just-in-time
+          compiled programming language with first-class functions. While it is
+          most well-known as the scripting language for Web pages, many
+          non-browser environments also use it, such as Node.js, Apache CouchDB
+          and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm,
+          dynamic language, supporting object-oriented, imperative, and
+          declarative (e.g. functional programming) styles. Read more about
+          JavaScript.
+        </p>
+        <hr class="my-4" />
+        <p>To learn More about JavaScript click the link below</p>
+        <a
+          class="btn btn-success btn-lg"
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          role="button"
+          target="_blank"
+          >Learn more</a
+        >
       </div>
-    </div>
-    <div class="container pt-5">
-      <h3 class="pb-4">What is a Library?</h3>
-      <p class="lead pb-3">A library is also a collection of implementations of behavior, written in terms of a language, that has a well-defined interface by which the behavior is invoked. For instance, people who want to write a higher level program can use a library to make system calls instead of implementing those system calls over and over again. In addition, the behavior is provided for reuse by multiple independent programs. A program invokes the library-provided behavior via a mechanism of the language. For example, in a simple imperative language such as C, the behavior in a library is invoked by using C's normal function-call. What distinguishes the call as being to a library function, versus being to another function in the same program, is the way that the code is organized in the system.</p>
-      <p class="lead">Library code is organized in such a way that it can be used by multiple programs that have no connection to each other, while code that is part of a program is organized to be used only within that one program. This distinction can gain a hierarchical notion when a program grows large, such as a multi-million-line program. In that case, there may be internal libraries that are reused by independent sub-portions of the large program. The distinguishing feature is that a library is organized for the purposes of being reused by independent programs or sub-programs, and the user only needs to know the interface and not the internal details of the library.</p>
-      <p class="lead pt-3">Here are a few popular and useful JavaScript Libraries</p>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="jQuery">
-              <img src="images/jquery.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">jQuery</h5>
-                <p class="card-text">jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License. As of May 2019, jQuery is used by 73% of the 10 million most popular websites. Web analysis indicates that it is the most widely deployed JavaScript library by a large margin, having 3 to 4 times more usage than any other JavaScript library</p>
-                <a href="https://jquery.com/" target="_blank" class="btn btn-primary">Visit Website</a>
+      <div class="container pt-4">
+        <h3>What is a Framework?</h3>
+        <p class="lead pt-3">
+          A framework, or software framework, is a platform for developing
+          software applications. It provides a foundation on which software
+          developers can build programs for a specific platform. For example, a
+          framework may include predefined classes and functions that can be
+          used to process input, manage hardware devices, and interact with
+          system software. This streamlines the development process since
+          programmers don't need to reinvent the wheel each time they develop a
+          new application.
+        </p>
+        <p class="lead pt-3">
+          A framework is similar to an application programming interface (API),
+          though technically a framework includes an API. As the name suggests,
+          a framework serves as a foundation for programming, while an API
+          provides access to the elements supported by the framework. A
+          framework may also include code libraries, a compiler, and other
+          programs used in the software development process.
+        </p>
+        <p class="lead pt-3">
+          Here are a few popular and useful JavaScript Frameworks
+        </p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Angular">
+                <img src="images/angular.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Angular</h5>
+                  <p class="card-text">
+                    Since its release back in 2010, Angular has always been
+                    developers’ favorite due to its flexibility, extensibility,
+                    and efficiency. Often referred to as an MVW
+                    (model-view-whatever) framework, Angular is a powerful and
+                    full-featured JavaScript framework developed by Google with
+                    the clear aim of simplifying the development of single-page
+                    applications.
+                  </p>
+                  <a
+                    href="https://angular.io/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="IOjs">
-              <img src="images/pixijs.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Pixi.js</h5>
-                <p class="card-text">Pixi.js is an open source, cross browser JavaScript 2D WebGL graphics library with canvas fallback.</p>
-                <a href="#" target="_blank" class="btn btn-primary">Visit Website</a>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="React">
+                <img src="images/react.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">React</h5>
+                  <p class="card-text">
+                    Built and maintained by Facebook, React is developers’ most
+                    preferred JavaScript framework for front-end development due
+                    to its ability to build high-performance, dynamic user
+                    interfaces. When used with React Native, it allows
+                    developers to build cross-platform mobile apps that are
+                    nearly identical to native Android and iOS apps.
+                  </p>
+                  <a
+                    href="https://reactjs.org/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="Intercoolerjs">
-              <img src="images/intercooler.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Intercooler.js</h5>
-                <p class="card-text">This is a natural HTML extended version. Developers are familiar with simple attributes of HTML platform which makes the development easier with Intercooler.js. This platform uses JavaScript to communicate with the server and it sends AJAX requests in familiar syntax to application.
-                </p>
-                <a href="https://intercoolerjs.org/" target="_blank" class="btn btn-primary">Visit Website</a>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Vue">
+                <img src="images/vue.jpeg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Vue</h5>
+                  <p class="card-text">
+                    Often referred to as a rising star in the world of web
+                    development, Vue is a lightweight and progressive JavaScript
+                    framework that takes only the best from Angular, React, and
+                    Ember, and put them together into a very small package.
+                    Having a much higher growth rate than both React and
+                    Angular, it can be a great choice for building high-end
+                    single page applications (SPAs).
+                  </p>
+                  <a
+                    href="https://vuejs.org/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="Matterjs">
-              <img src="images/tutsplusmatterjs.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Matter.js</h5>
-                <p class="card-text">This is a JavaScript 2D rigid body physics engine for web. This engine module uses different methods for creation and manipulation of engines. Matter.js is a controller that manages updating and rendering the simulation of the world. The project is currently in alpha status. The API of matter.js is still under development.</p>
-                <a href="http://brm.io/matter-js/" target="_blank" class="btn btn-primary">Visit Website</a>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Ember">
+                <img src="images/ember.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Ember</h5>
+                  <p class="card-text">
+                    If you’ve ever used the Apple Music, then you’ve already
+                    used a mobile app built with Ember. Billed as a JavaScript
+                    framework for ambitious web developers, Ember is built with
+                    developer ergonomics in mind for providing higher
+                    productivity. Among the top users of this JavaScript
+                    framework are Netflix, Microsoft, Heroku, LinkedIn, TED and
+                    many others. Below is the architecture of Ember:
+                  </p>
+                  <a
+                    href="https://emberjs.com/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="Immutablejs">
-              <img src="images/ Immutable.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Immutable.js</h5>
-                <p class="card-text">Immutable.js offers Persistant immutable list, Stack, Map, OrderedMap, Set, OrderedSet and Record. The platform is highly efficient even on modern JavaScript virtual machines. You can use hash maps and vectors using Clojure and Scala to copy or cache the data. This platform offers lazy Seq that allows efficient chaining of collection methods without creating intermediate representations.</p>
-                <a href="https://immutable-js.github.io/immutable-js/docs/#/" target="_blank" class="btn btn-primary">Visit Website</a>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Node">
+                <img src="images/nodejs.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Node</h5>
+                  <p class="card-text">
+                    Built on Chrome’s V8 JavaScript Engine, Node a JavaScript
+                    runtime environment designed to let developers easily build
+                    high-performance, scalable network applications. Taking
+                    advantage of asynchronous event-driven, unblocking I/O
+                    model, Node executes JavaScript code on a web server,
+                    instead of running it on the client-side inside a browser.
+                  </p>
+                  <a
+                    href="https://nodejs.org/en/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="Formatjs">
-              <img src="images/formatjs.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Format.js</h5>
-                <p class="card-text">FormatJS is modern collection of JavaScript libraries for internationalisation focused on number, data and string formatting. The platform contains set of core libraries that can be used to build the JavaScript Intl built-ins and Industry wide i18n standards. FormatJS has set of integrations for common template and libraries.</p>
-                <a href="https://formatjs.io/" target="_blank" class="btn btn-primary">Visit Website</a>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Backbone">
+                <img src="images/backbone.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Backbone</h5>
+                  <p class="card-text">
+                    Known for being extremely lightweight and fast, Backbone is
+                    a widely used JavaScript framework based on the MVP
+                    (model–view–presenter) architectural pattern. With an
+                    excellent support for RESTful APIs, this flexible JavaScript
+                    framework is a perfect choice for developing
+                    well-structured, client-side single-page web applications
+                    that run inside web browsers.
+                  </p>
+                  <a
+                    href="https://backbonejs.org/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="Animajs">
-              <img src="images/animejs-tuts.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Anima.js</h5>
-                <p class="card-text">Anima.js enables you to use delays and durations. You can use this platform for CSS animation creation. The tool uses CSS transforms and 3D transforms with JavaScript to create animation. You can control the tool with flow so that you can start, stop, cancel animations and even create event-based stuff.</p>
-                <a href="Anima.js" target="_blank" class="btn btn-primary">Visit Website</a>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Polymer">
+                <img src="images/polymer.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Polymer</h5>
+                  <p class="card-text">
+                    The Polymer is another powerful JavaScript framework backed
+                    by Google to help developers quickly build high-performant
+                    and maintainable web applications using custom reusable HTML
+                    elements aka Web Components. Based on Google’s Material
+                    Design principle, Polymer strongly emphasizes standards
+                    compliance and is used by several Google-powered services,
+                    including the redesigned YouTube and Allo for web.
+                  </p>
+                  <a
+                    href="https://www.polymer-project.org/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="Isjs">
-              <img src="images/Isjs.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Is.js</h5>
-                <p class="card-text">Is.js is an independent general purpose check library. You can check types, regexps, presence, time and much more other things using is.js.</p>
-                <a href="https://is.js.org/" target="_blank" class="btn btn-primary">Visit Website</a>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Meteor">
+                <img src="images/Meteor.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Meteor</h5>
+                  <p class="card-text">
+                    Unlike other most popular JavaScript frameworks in this
+                    list, Meteor can be used to develop both front-end as well
+                    as back-end components of a JavaScript-based web, mobile,
+                    and desktop application. Perfect for those who want to build
+                    real-time web apps, this full-stack reactive application
+                    framework is a perfect mix of Angular, React, Cordova,
+                    Blaze, and MongoDB. This is how Meteor works
+                  </p>
+                  <a
+                    href="https://www.meteor.com/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="MinBlockjs">
-              <img src="images/minblockjs.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">MinBlock.js</h5>
-                <p class="card-text">minBlock.js Javascript library can be used for Matrix Grid implementation. The platform was designed to generate Github like random avatar.</p>
-                <a href="http://flouthoc.github.io/minBlock.js/" target="_blank" class="btn btn-primary">Visit Website</a>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Aurelia">
+                <img src="images/Aurelia.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Aurelia</h5>
+                  <p class="card-text">
+                    Advertised as “the next generation UI framework”, Aurelia
+                    focuses on business logic, rather than the framework itself.
+                    It is basically a collection of several small JS modules
+                    written in ECMAScript, which you can pick and use to develop
+                    next-generation JavaScript applications. Surprisingly,
+                    Aurelia is the only JavaScript framework that allows
+                    developers to create components using the plain JavaScript
+                    or Vanilla TypeScript.
+                  </p>
+                  <a
+                    href="https://aurelia.io/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="blinkTitlejs">
-              <img src="images/blinktitlejs.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">blinkTitle.js</h5>
-                <p class="card-text">blinkTitle.js is pure javascript implementation of titlebar alert or notification. The tool can be used to perform blinking of html titlebar for titlebar aert or titlebar notification.</p>
-                <a href="http://flouthoc.github.io/blinkTitle.js/" target="_blank" class="btn btn-primary">Visit Website</a>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Mithril">
+                <img src="images/Mithril.jpeg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Mithril</h5>
+                  <p class="card-text">
+                    Mithril is a lesser-known yet widely used modern client-side
+                    JavaScript framework with a very small footprint of less
+                    than 8kb gzipped. Inspired by React.js to a great extent,
+                    this small-size JavaScript framework is mainly used for
+                    developing Single Page Applications. Owing to its smaller
+                    download size and better performance than Vue, React, and
+                    Angular, Mithril is used by popular websites like Vimeo,
+                    Nike, and Lichess.
+                  </p>
+                  <a
+                    href="https://mithril.js.org/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="Createjs">
-              <img src="images/createjs.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Create.js</h5>
-                <p class="card-text">From web animation to digital media you can work with everything in CreateJS. This isn’t one single library, but rather a suite of libraries built for different purposes. For example Easel.js works with HTML5 canvas elements while Tweet.js helps you build custom tweening & animations for the web.</p>
-                <a href="https://createjs.com/" target="_blank" class="btn btn-primary">Visit Website</a>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Knockout">
+                <img
+                  src="images/knockoutjs.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Knockout</h5>
+                  <p class="card-text">
+                    Knockout is a lightweight and small open-source JavaScript
+                    framework built to simplify the development of dynamic
+                    JavaScript UIs with the MVVM (model–view–view-model)
+                    pattern. Being written in pure JavaScript, this open-source
+                    framework supports all mainstream browsers, has no
+                    dependencies, and can be easily integrated with any other
+                    existing web frameworks.
+                  </p>
+                  <a
+                    href="https://knockoutjs.com/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card mb-3 h-100" id="Keystonejs">
-              <img src="images/keystonejs.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Keystone.js</h5>
-                <p class="card-text">With Keystone you can build MEAN webapps powered by Node/Express and MongoDB on the backend. Keystone.js is completely free but still very new. At the time of this writing it’s only in v0.3 so it has a long way to go for professional use.
-                  But if you’re tickled by a pure JavaScript CMS then check it out and see what you think.
-                </p>
-                <a href="https://keystonejs.com/" target="_blank" class="btn btn-primary">Visit Website</a>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card h-100" id="Bootstrap">
+                <img
+                  src="images/bootstrap.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Bootstrap</h5>
+                  <p class="card-text">
+                    Build responsive, mobile-first projects on the web with the
+                    world’s most popular front-end component library. Bootstrap
+                    is an open source toolkit for developing with HTML, CSS, and
+                    JS. Quickly prototype your ideas or build your entire app
+                    with our Sass variables and mixins, responsive grid system,
+                    extensive prebuilt components, and powerful plugins built on
+                    jQuery.
+                  </p>
+                  <a
+                    href="https://getbootstrap.com/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <hr class="mt-5" style="width: 90%">
-    <footer class="footer bg-secondary">
-      <div style="margin-bottom: 10px;">
-        <a href="https://www.facebook.com/profile.php?id=100006371235389" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/hamdan_hassan922/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+      <div class="container pt-5">
+        <h3 class="pb-4">What is a Library?</h3>
+        <p class="lead pb-3">
+          A library is also a collection of implementations of behavior, written
+          in terms of a language, that has a well-defined interface by which the
+          behavior is invoked. For instance, people who want to write a higher
+          level program can use a library to make system calls instead of
+          implementing those system calls over and over again. In addition, the
+          behavior is provided for reuse by multiple independent programs. A
+          program invokes the library-provided behavior via a mechanism of the
+          language. For example, in a simple imperative language such as C, the
+          behavior in a library is invoked by using C's normal function-call.
+          What distinguishes the call as being to a library function, versus
+          being to another function in the same program, is the way that the
+          code is organized in the system.
+        </p>
+        <p class="lead">
+          Library code is organized in such a way that it can be used by
+          multiple programs that have no connection to each other, while code
+          that is part of a program is organized to be used only within that one
+          program. This distinction can gain a hierarchical notion when a
+          program grows large, such as a multi-million-line program. In that
+          case, there may be internal libraries that are reused by independent
+          sub-portions of the large program. The distinguishing feature is that
+          a library is organized for the purposes of being reused by independent
+          programs or sub-programs, and the user only needs to know the
+          interface and not the internal details of the library.
+        </p>
+        <p class="lead pt-3">
+          Here are a few popular and useful JavaScript Libraries
+        </p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="jQuery">
+                <img src="images/jquery.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">jQuery</h5>
+                  <p class="card-text">
+                    jQuery is a JavaScript library designed to simplify HTML DOM
+                    tree traversal and manipulation, as well as event handling,
+                    CSS animation, and Ajax. It is free, open-source software
+                    using the permissive MIT License. As of May 2019, jQuery is
+                    used by 73% of the 10 million most popular websites. Web
+                    analysis indicates that it is the most widely deployed
+                    JavaScript library by a large margin, having 3 to 4 times
+                    more usage than any other JavaScript library
+                  </p>
+                  <a
+                    href="https://jquery.com/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="IOjs">
+                <img src="images/pixijs.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Pixi.js</h5>
+                  <p class="card-text">
+                    Pixi.js is an open source, cross browser JavaScript 2D WebGL
+                    graphics library with canvas fallback.
+                  </p>
+                  <a href="#" target="_blank" class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Intercoolerjs">
+                <img
+                  src="images/intercooler.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Intercooler.js</h5>
+                  <p class="card-text">
+                    This is a natural HTML extended version. Developers are
+                    familiar with simple attributes of HTML platform which makes
+                    the development easier with Intercooler.js. This platform
+                    uses JavaScript to communicate with the server and it sends
+                    AJAX requests in familiar syntax to application.
+                  </p>
+                  <a
+                    href="https://intercoolerjs.org/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Matterjs">
+                <img
+                  src="images/tutsplusmatterjs.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Matter.js</h5>
+                  <p class="card-text">
+                    This is a JavaScript 2D rigid body physics engine for web.
+                    This engine module uses different methods for creation and
+                    manipulation of engines. Matter.js is a controller that
+                    manages updating and rendering the simulation of the world.
+                    The project is currently in alpha status. The API of
+                    matter.js is still under development.
+                  </p>
+                  <a
+                    href="http://brm.io/matter-js/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Immutablejs">
+                <img
+                  src="images/ Immutable.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Immutable.js</h5>
+                  <p class="card-text">
+                    Immutable.js offers Persistant immutable list, Stack, Map,
+                    OrderedMap, Set, OrderedSet and Record. The platform is
+                    highly efficient even on modern JavaScript virtual machines.
+                    You can use hash maps and vectors using Clojure and Scala to
+                    copy or cache the data. This platform offers lazy Seq that
+                    allows efficient chaining of collection methods without
+                    creating intermediate representations.
+                  </p>
+                  <a
+                    href="https://immutable-js.github.io/immutable-js/docs/#/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Formatjs">
+                <img src="images/formatjs.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Format.js</h5>
+                  <p class="card-text">
+                    FormatJS is modern collection of JavaScript libraries for
+                    internationalisation focused on number, data and string
+                    formatting. The platform contains set of core libraries that
+                    can be used to build the JavaScript Intl built-ins and
+                    Industry wide i18n standards. FormatJS has set of
+                    integrations for common template and libraries.
+                  </p>
+                  <a
+                    href="https://formatjs.io/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Animajs">
+                <img
+                  src="images/animejs-tuts.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Anima.js</h5>
+                  <p class="card-text">
+                    Anima.js enables you to use delays and durations. You can
+                    use this platform for CSS animation creation. The tool uses
+                    CSS transforms and 3D transforms with JavaScript to create
+                    animation. You can control the tool with flow so that you
+                    can start, stop, cancel animations and even create
+                    event-based stuff.
+                  </p>
+                  <a href="Anima.js" target="_blank" class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Isjs">
+                <img src="images/Isjs.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Is.js</h5>
+                  <p class="card-text">
+                    Is.js is an independent general purpose check library. You
+                    can check types, regexps, presence, time and much more other
+                    things using is.js.
+                  </p>
+                  <a
+                    href="https://is.js.org/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="MinBlockjs">
+                <img
+                  src="images/minblockjs.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">MinBlock.js</h5>
+                  <p class="card-text">
+                    minBlock.js Javascript library can be used for Matrix Grid
+                    implementation. The platform was designed to generate Github
+                    like random avatar.
+                  </p>
+                  <a
+                    href="http://flouthoc.github.io/minBlock.js/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="blinkTitlejs">
+                <img
+                  src="images/blinktitlejs.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">blinkTitle.js</h5>
+                  <p class="card-text">
+                    blinkTitle.js is pure javascript implementation of titlebar
+                    alert or notification. The tool can be used to perform
+                    blinking of html titlebar for titlebar aert or titlebar
+                    notification.
+                  </p>
+                  <a
+                    href="http://flouthoc.github.io/blinkTitle.js/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Createjs">
+                <img src="images/createjs.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Create.js</h5>
+                  <p class="card-text">
+                    From web animation to digital media you can work with
+                    everything in CreateJS. This isn’t one single library, but
+                    rather a suite of libraries built for different purposes.
+                    For example Easel.js works with HTML5 canvas elements while
+                    Tweet.js helps you build custom tweening & animations for
+                    the web.
+                  </p>
+                  <a
+                    href="https://createjs.com/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="card mb-3 h-100" id="Keystonejs">
+                <img
+                  src="images/keystonejs.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Keystone.js</h5>
+                  <p class="card-text">
+                    With Keystone you can build MEAN webapps powered by
+                    Node/Express and MongoDB on the backend. Keystone.js is
+                    completely free but still very new. At the time of this
+                    writing it’s only in v0.3 so it has a long way to go for
+                    professional use. But if you’re tickled by a pure JavaScript
+                    CMS then check it out and see what you think.
+                  </p>
+                  <a
+                    href="https://keystonejs.com/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Visit Website</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <small>Copyright&copy; 2019 All rights reserved</small>
-      <small>Email: hassanmohammad922@gmail.com</small>
-    </footer>
-    
+      <hr class="mt-5" style="width: 90%" />
+      <footer class="footer bg-secondary">
+        <div style="margin-bottom: 10px">
+          <a
+            href="https://www.facebook.com/profile.php?id=100006371235389"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/hamdan_hassan922/?hl=en"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <small>Copyright&copy; 2019 All rights reserved</small>
+        <small>Email: hassanmohammad922@gmail.com</small>
+      </footer>
+    </div>
+
     <button id="up-arrow"><i class="fas fa-arrow-alt-circle-up"></i></button>
     <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
